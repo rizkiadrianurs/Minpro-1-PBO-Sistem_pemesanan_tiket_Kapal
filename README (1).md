@@ -40,6 +40,7 @@ Program sistem pemesanan tiket kapal memiliki alur sebagai berikut:
 4. **Program berakhir**  
    Ketika pengguna memilih menu **Keluar**, perulangan `do-while` dihentikan dan program selesai dijalankan.
 
+## Detail Menu Program
 ### 1. Tambah Pemesanan
 Pengguna memasukkan ID pemesanan, nama, NIK, dan umur penumpang, lalu memilih salah satu dari 3 kapal yang tersedia (KM Bukit Siguntang, KM Lambelu, KM Dorolonda) beserta jumlah tiket. Sistem kemudian membuat objek `Penumpang`, `Kapal`, dan `Pemesanan` baru, lalu menambahkannya ke `daftarPemesanan` dan menampilkan total harga yang harus dibayar (`getTotalHarga()`).
 

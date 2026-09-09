@@ -207,4 +207,53 @@ Sistem_pemesanan_tiket_Kapal/
 ---
 
 # Gambaran Output
-1. 
+
+## 1. Menu
+
+<img width="933" height="642" alt="Screenshot 2026-09-09 235326" src="https://github.com/user-attachments/assets/cee00afe-7fe1-418f-9427-617166ff2426" />
+
+Pada bagian ini, sistem menampilkan **5 menu utama**, yaitu Tambah Pemesanan, Tampilkan Pemesanan, Ubah Pemesanan, Hapus Pemesanan, dan Keluar. Menu tersebut digunakan untuk mengelola data pemesanan tiket kapal.
+
+
+## 2. Contoh Tambah Pemesanan
+
+<img width="442" height="567" alt="Screenshot 2026-09-10 003246" src="https://github.com/user-attachments/assets/95e9f981-5d4a-470f-b60e-a5aa4f2ad808" />
+
+Pada bagian ini, pengguna memasukkan data penumpang, memilih kapal, dan menentukan jumlah tiket. Sistem kemudian menyimpan data pemesanan serta menghitung **total harga secara otomatis** berdasarkan harga tiket dan jumlah tiket.
+
+
+
+## 3. Contoh Tampilkan Pemesanan
+
+<img width="371" height="500" alt="Screenshot 2026-09-10 003257" src="https://github.com/user-attachments/assets/aa27180b-d3b0-475c-a709-344e1d75f477" />
+
+Pada bagian ini, sistem menampilkan data pemesanan yang telah tersimpan, meliputi **ID pemesanan, data penumpang, kapal, tujuan, harga tiket, jumlah tiket, dan total harga**.
+
+Contoh menampilkan satu pemesanan dengan ID **12** atas nama **Rizki**, menggunakan **KM Lambelu** dengan tujuan **Makassar**. Harga tiket sebesar **Rp200.000** dengan jumlah 1 tiket, sehingga total harga adalah **Rp200.000**.
+
+
+
+## 4. Ubah Pemesanan
+
+<img width="443" height="546" alt="Screenshot 2026-09-10 003346" src="https://github.com/user-attachments/assets/b0bc92de-2265-43ea-870a-c816d0769736" />
+
+Pada bagian ini, pengguna memilih menu **Ubah Pemesanan** dan memasukkan ID pemesanan yang ingin diperbarui. Setelah data baru dimasukkan, sistem memperbarui informasi pemesanan dan menampilkan pesan **"Data berhasil diubah."**
+
+
+
+## 5. Hapus Pemesanan
+
+<img width="367" height="355" alt="Screenshot 2026-09-10 003359" src="https://github.com/user-attachments/assets/f16057fd-d272-4401-baea-99b75af61d2e" />
+
+Pada bagian ini, pengguna memilih menu **Hapus Pemesanan** dan memasukkan ID pemesanan yang ingin dihapus. Jika ID ditemukan, sistem menghapus data dari `ArrayList` dan menampilkan pesan **"Data berhasil dihapus."**
+
+
+
+## 6. Keluar
+
+<img width="347" height="288" alt="Screenshot 2026-09-10 003413" src="https://github.com/user-attachments/assets/0a47d889-e570-4833-a65c-737296ead8e7" />
+
+Pada bagian ini, pengguna memilih menu **Keluar** untuk mengakhiri program. Sistem menghentikan perulangan dan menampilkan pesan **"Program selesai. Terima kasih."**
+
+
+

@@ -59,10 +59,12 @@ public class Sistem_pemesanan_tiket_Kapal {
                     System.out.println("2. KM Lambelu - Makassar - Rp200000");
                     System.out.println("3. KM Dorolonda - Parepare - Rp175000");
                     System.out.print("Pilih kapal: ");
-                    int pilihKapal = Integer.parseInt(input.nextLine());
-
+                    int pilihKapal = input.nextInt();
+                    input.nextLine();
+                    
                     System.out.print("Jumlah Tiket : ");
-                    int jumlahTiket = Integer.parseInt(input.nextLine());
+                    int jumlahTiket = input.nextInt();
+                    input.nextLine();
 
                     String namaKapal = "";
                     String tujuan = "";
@@ -126,83 +128,89 @@ public class Sistem_pemesanan_tiket_Kapal {
                          }
                      }
                  }
-                 case 3 -> {
-        System.out.println();
-        System.out.println("--- UBAH PEMESANAN ---");
-
-        System.out.print("Masukkan ID Pemesanan: ");
-        String idCari = input.nextLine();
-
-        boolean ditemukan = false;
-
-        for (Pemesanan p : daftarPemesanan) {
-
-            if (p.getIdPemesanan().equals(idCari)) {
-
-                System.out.print("Nama Penumpang Baru : ");
-                String namaBaru = input.nextLine();
-
-                System.out.print("NIK Baru : ");
-                String nikBaru = input.nextLine();
-
-                System.out.print("Umur Baru : ");
-                int umurBaru = Integer.parseInt(input.nextLine());
-
+                case 3 -> {
                 System.out.println();
-                System.out.println("Pilihan Kapal:");
-                System.out.println("1. KM Bukit Siguntang - Balikpapan - Rp150000");
-                System.out.println("2. KM Lambelu - Makassar - Rp200000");
-                System.out.println("3. KM Dorolonda - Parepare - Rp175000");
-                System.out.print("Pilih kapal: ");
-                int pilihKapalBaru = Integer.parseInt(input.nextLine());
+                System.out.println("--- UBAH PEMESANAN ---");
 
-                String namaKapalBaru = "";
-                String tujuanBaru = "";
-                int hargaBaru = 0;
+                System.out.print("Masukkan ID Pemesanan: ");
+                String idCari = input.nextLine();
 
-                switch (pilihKapalBaru) {
-                    case 1 -> {
-                        namaKapalBaru = "KM Bukit Siguntang";
-                        tujuanBaru = "Balikpapan";
-                        hargaBaru = 150000;
+                boolean ditemukan = false;
+
+                for (Pemesanan p : daftarPemesanan) {
+
+                    if (p.getIdPemesanan().equals(idCari)) {
+
+                        System.out.print("Nama Penumpang Baru : ");
+                        String namaBaru = input.nextLine();
+
+                        System.out.print("NIK Baru : ");
+                        String nikBaru = input.nextLine();
+
+                        System.out.print("Umur Baru : ");
+                        int umurBaru = input.nextInt();
+                        input.nextLine();
+
+                        System.out.println();
+                        System.out.println("Pilihan Kapal:");
+                        System.out.println("1. KM Bukit Siguntang - Balikpapan - Rp150000");
+                        System.out.println("2. KM Lambelu - Makassar - Rp200000");
+                        System.out.println("3. KM Dorolonda - Parepare - Rp175000");
+                        System.out.print("Pilih kapal: ");
+                        int pilihKapalBaru = input.nextInt();
+                        input.nextLine();
+
+                        System.out.print("Jumlah Tiket Baru : ");
+                        int jumlahBaru = input.nextInt();
+                        input.nextLine();
+
+                        String namaKapalBaru = "";
+                        String tujuanBaru = "";
+                        int hargaBaru = 0;
+
+                        switch (pilihKapalBaru) {
+                            case 1 -> {
+                                namaKapalBaru = "KM Bukit Siguntang";
+                                tujuanBaru = "Balikpapan";
+                                hargaBaru = 150000;
+                            }
+                            case 2 -> {
+                                namaKapalBaru = "KM Lambelu";
+                                tujuanBaru = "Makassar";
+                                hargaBaru = 200000;
+                            }
+                            case 3 -> {
+                                namaKapalBaru = "KM Dorolonda";
+                                tujuanBaru = "Parepare";
+                                hargaBaru = 175000;
+                            }
+                            default -> System.out.println("Pilihan kapal tidak tersedia.");
+                        }
+
+                        if (hargaBaru > 0) {
+                            p.getPenumpang().setNama(namaBaru);
+                            p.getPenumpang().setNik(nikBaru);
+                            p.getPenumpang().setUmur(umurBaru);
+
+                            p.getKapal().setNamaKapal(namaKapalBaru);
+                            p.getKapal().setTujuan(tujuanBaru);
+                            p.getKapal().setHargaTiket(hargaBaru);
+
+                            p.setJumlahTiket(jumlahBaru);
+
+                            System.out.println();
+                            System.out.println("Data berhasil diubah.");
+                        }
+
+                        ditemukan = true;
+                        break;
                     }
-                    case 2 -> {
-                        namaKapalBaru = "KM Lambelu";
-                        tujuanBaru = "Makassar";
-                        hargaBaru = 200000;
-                    }
-                    case 3 -> {
-                        namaKapalBaru = "KM Dorolonda";
-                        tujuanBaru = "Parepare";
-                        hargaBaru = 175000;
-                    }
-                    default -> System.out.println("Pilihan kapal tidak tersedia.");
                 }
 
-                System.out.print("Jumlah Tiket Baru : ");
-                int jumlahBaru = Integer.parseInt(input.nextLine());
-
-                p.getPenumpang().setNama(namaBaru);
-                p.getPenumpang().setNik(nikBaru);
-                p.getPenumpang().setUmur(umurBaru);
-
-                p.getKapal().setNamaKapal(namaKapalBaru);
-                p.getKapal().setTujuan(tujuanBaru);
-                p.getKapal().setHargaTiket(hargaBaru);
-
-                p.setJumlahTiket(jumlahBaru);
-
-                System.out.println("Data berhasil diubah.");
-
-                ditemukan = true;
-                break;
+                if (!ditemukan) {
+                    System.out.println("Data dengan ID tersebut tidak ditemukan.");
+                }
             }
-        }
-
-        if (!ditemukan) {
-            System.out.println("Data dengan ID tersebut tidak ditemukan.");
-        }
-    }
                  case 4 ->                     {
                      System.out.println();
                      System.out.println("--- HAPUS PEMESANAN ---");

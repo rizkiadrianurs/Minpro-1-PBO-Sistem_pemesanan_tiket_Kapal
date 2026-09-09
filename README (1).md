@@ -10,7 +10,7 @@
 
 ## Deskripsi Singkat Program
 
-Program ini merupakan **Sistem Pemesanan Tiket Kapal** berbasis Java yang dijalankan melalui console/CLI. Program dibuat dengan menerapkan konsep **Pemrograman Berorientasi Objek (PBO)** dan menyediakan fitur untuk mengelola data pemesanan tiket kapal secara interaktif.
+Program ini merupakan Sistem Pemesanan Tiket Kapal berbasis Java yang dijalankan melalui console/CLI. Program dibuat dengan menerapkan konsep Pemrograman Berorientasi Objek (PBO) dan menyediakan fitur untuk mengelola data pemesanan tiket kapal secara interaktif.
 
 Pengguna dapat melakukan beberapa proses, yaitu:
 
@@ -68,7 +68,7 @@ Program dijalankan melalui method `main` pada kelas `Sistem_pemesanan_tiket_Kapa
 
 ### 2. Menu Utama
 
-Program menampilkan menu utama secara berulang menggunakan perulangan `do-while`. Perulangan akan terus berjalan sampai pengguna memilih menu **Keluar**.
+Program menampilkan menu utama secara berulang menggunakan perulangan `do-while`. Perulangan akan terus berjalan sampai pengguna memilih menu Keluar.
 
 | No. | Menu | Fungsi |
 |---|---|---|
@@ -84,7 +84,7 @@ Data pemesanan disimpan sementara di dalam memori menggunakan `ArrayList<Pemesan
 
 ### 4. Program Berakhir
 
-Ketika pengguna memilih menu **Keluar**, kondisi perulangan `do-while` tidak terpenuhi sehingga perulangan berhenti dan program selesai dijalankan.
+Ketika pengguna memilih menu Keluar, kondisi perulangan `do-while` tidak terpenuhi sehingga perulangan berhenti dan program selesai dijalankan.
 
 ---
 
@@ -99,7 +99,7 @@ Pada menu ini, pengguna dapat menambahkan data pemesanan tiket kapal.
 - Pengguna memasukkan ID pemesanan, nama penumpang, NIK, umur, pilihan kapal, dan jumlah tiket.
 - Sistem menampilkan tiga pilihan kapal beserta tujuan dan harga tiket.
 - Sistem menentukan nama kapal, tujuan, dan harga tiket berdasarkan pilihan pengguna menggunakan percabangan `switch`.
-- Jika pilihan kapal tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem menampilkan pesan **"Pilihan kapal tidak tersedia."** dan data tidak disimpan.
+- Jika pilihan kapal tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem menampilkan pesan "Pilihan kapal tidak tersedia." dan data tidak disimpan.
 - Jika pilihan valid, sistem membuat objek `Penumpang`, `Kapal`, dan `Pemesanan` menggunakan constructor.
 - Objek `Pemesanan` kemudian ditambahkan ke dalam `ArrayList` `daftarPemesanan`.
 - Sistem menghitung total harga secara otomatis menggunakan method `getTotalHarga()`.
@@ -114,7 +114,7 @@ Pada menu ini, sistem menampilkan seluruh data pemesanan yang telah tersimpan.
 **Alur proses:**
 
 - Sistem memeriksa isi `ArrayList` `daftarPemesanan`.
-- Jika belum terdapat data, sistem menampilkan pesan **"Belum ada data pemesanan."**
+- Jika belum terdapat data, sistem menampilkan pesan "Belum ada data pemesanan."
 - Jika terdapat data, sistem menggunakan perulangan `for` untuk mengambil setiap objek `Pemesanan`.
 - Sistem menampilkan ID pemesanan, nama penumpang, NIK, umur, nama kapal, tujuan, harga tiket, jumlah tiket, dan total harga.
 - Total harga diperoleh dari hasil perhitungan method `getTotalHarga()`.
@@ -133,7 +133,7 @@ Pada menu ini, pengguna dapat mengubah data pemesanan yang telah tersimpan.
 - Sistem menentukan nama kapal, tujuan, dan harga tiket berdasarkan pilihan kapal menggunakan percabangan `switch`.
 - Jika pilihan kapal valid, data objek `Penumpang` dan `Kapal` diperbarui menggunakan method `setter`.
 - Jumlah tiket pada objek `Pemesanan` juga diperbarui.
-- Jika ID tidak ditemukan, sistem menampilkan pesan **"Data dengan ID tersebut tidak ditemukan."**
+- Jika ID tidak ditemukan, sistem menampilkan pesan "Data dengan ID tersebut tidak ditemukan."
 
 ---
 
@@ -146,8 +146,8 @@ Pada menu ini, pengguna dapat menghapus data pemesanan berdasarkan ID pemesanan.
 - Pengguna memasukkan ID pemesanan yang ingin dihapus.
 - Sistem melakukan perulangan untuk mencari data berdasarkan `idPemesanan`.
 - Jika ID ditemukan, objek `Pemesanan` dihapus dari `ArrayList` menggunakan method `remove()`.
-- Sistem menampilkan pesan **"Data berhasil dihapus."**
-- Jika ID tidak ditemukan, sistem menampilkan pesan **"Data dengan ID tersebut tidak ditemukan."**
+- Sistem menampilkan pesan "Data berhasil dihapus."
+- Jika ID tidak ditemukan, sistem menampilkan pesan "Data dengan ID tersebut tidak ditemukan."
 
 ---
 
@@ -158,7 +158,7 @@ Menu ini digunakan untuk mengakhiri program.
 **Alur proses:**
 
 - Pengguna memilih menu **5. Keluar**.
-- Sistem menampilkan pesan **"Program selesai."** dan **"Terima kasih."**
+- Sistem menampilkan pesan "Program selesai." dan "Terima kasih."
 - Nilai `pilihan` menjadi `5`, sehingga kondisi pada perulangan `do-while` tidak terpenuhi.
 - Perulangan berhenti dan program selesai dijalankan.
 
@@ -184,7 +184,7 @@ Dengan demikian, akses terhadap data dapat dikontrol melalui method yang telah d
 
 Program menerapkan validasi terhadap input pengguna, salah satunya pada pilihan kapal.
 
-Jika pengguna memasukkan pilihan yang tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem akan menampilkan pesan **"Pilihan kapal tidak tersedia."** dan tidak menyimpan data pemesanan.
+Jika pengguna memasukkan pilihan yang tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem akan menampilkan pesan "Pilihan kapal tidak tersedia." dan tidak menyimpan data pemesanan.
 
 ---
 
@@ -213,7 +213,7 @@ Sistem_pemesanan_tiket_Kapal/
 
 <img width="933" height="642" alt="Screenshot 2026-09-09 235326" src="https://github.com/user-attachments/assets/cee00afe-7fe1-418f-9427-617166ff2426" />
 
-Pada bagian ini, sistem menampilkan **5 menu utama**, yaitu Tambah Pemesanan, Tampilkan Pemesanan, Ubah Pemesanan, Hapus Pemesanan, dan Keluar. Menu tersebut digunakan untuk mengelola data pemesanan tiket kapal.
+Pada bagian ini, sistem menampilkan 5 menu utama, yaitu Tambah Pemesanan, Tampilkan Pemesanan, Ubah Pemesanan, Hapus Pemesanan, dan Keluar. Menu tersebut digunakan untuk mengelola data pemesanan tiket kapal.
 
 ---
 
@@ -221,7 +221,7 @@ Pada bagian ini, sistem menampilkan **5 menu utama**, yaitu Tambah Pemesanan, Ta
 
 <img width="442" height="567" alt="Screenshot 2026-09-10 003246" src="https://github.com/user-attachments/assets/95e9f981-5d4a-470f-b60e-a5aa4f2ad808" />
 
-Pada bagian ini, pengguna memasukkan data penumpang, memilih kapal, dan menentukan jumlah tiket. Sistem kemudian menyimpan data pemesanan serta menghitung **total harga secara otomatis** berdasarkan harga tiket dan jumlah tiket.
+Pada bagian ini, pengguna memasukkan data penumpang, memilih kapal, dan menentukan jumlah tiket. Sistem kemudian menyimpan data pemesanan serta menghitung total harga secara otomatis berdasarkan harga tiket dan jumlah tiket.
 
 ---
 
@@ -229,6 +229,6 @@ Pada bagian ini, pengguna memasukkan data penumpang, memilih kapal, dan menentuk
 
 <img width="371" height="500" alt="Screenshot 2026-09-10 003257" src="https://github.com/user-attachments/assets/aa27180b-d3b0-475c-a709-344e1d75f477" />
 
-Pada bagian ini, sistem menampilkan data pemesanan yang telah tersimpan, meliputi **ID pemesanan, data penumpang, kapal, tujuan, harga tiket, jumlah tiket, dan total harga**.
+Pada bagian ini, sistem menampilkan data pemesanan yang telah tersimpan, meliputi ID pemesanan, data penumpang, kapal, tujuan, harga tiket, jumlah tiket, dan total harga.
 
 

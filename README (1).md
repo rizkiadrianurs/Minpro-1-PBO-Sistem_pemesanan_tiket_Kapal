@@ -18,18 +18,27 @@ Program ini menerapkan konsep-konsep OOP seperti:
 
 ## Penjelasan Alur Program
 
-1. Program dijalankan melalui method `main` pada kelas `Sistem_pemesanan_tiket_Kapal`.
+Program sistem pemesanan tiket kapal memiliki alur sebagai berikut:
 
-2. Program menampilkan menu utama secara berulang menggunakan looping `do-while` sampai pengguna memilih menu **Keluar**.
+1. **Program dimulai**  
+   Program dijalankan melalui method `main` pada kelas `Sistem_pemesanan_tiket_Kapal`.
 
-   Menu yang tersedia:
-   1. **Tambah Pemesanan**
-   2. **Tampilkan Pemesanan**
-   3. **Ubah Pemesanan**
-   4. **Hapus Pemesanan**
-   5. **Keluar**
+2. **Menampilkan menu utama**  
+   Program menampilkan menu utama secara berulang menggunakan perulangan `do-while`. Perulangan akan terus berjalan hingga pengguna memilih opsi **Keluar**.
 
-3. Data pemesanan disimpan sementara di memori menggunakan `ArrayList<Pemesanan>` selama program berjalan.
+   | No. | Menu | Fungsi |
+   |---|---|---|
+   | 1 | **Tambah Pemesanan** | Menambahkan data pemesanan tiket kapal. |
+   | 2 | **Tampilkan Pemesanan** | Menampilkan seluruh data pemesanan yang tersimpan. |
+   | 3 | **Ubah Pemesanan** | Mengubah data pemesanan yang telah tersimpan. |
+   | 4 | **Hapus Pemesanan** | Menghapus data pemesanan yang dipilih. |
+   | 5 | **Keluar** | Mengakhiri program. |
+
+3. **Penyimpanan data**  
+   Data pemesanan disimpan sementara di dalam memori menggunakan `ArrayList<Pemesanan>`. Data dapat ditambah, ditampilkan, diubah, dan dihapus selama program masih berjalan.
+
+4. **Program berakhir**  
+   Ketika pengguna memilih menu **Keluar**, perulangan `do-while` dihentikan dan program selesai dijalankan.
 
 ### 1. Tambah Pemesanan
 Pengguna memasukkan ID pemesanan, nama, NIK, dan umur penumpang, lalu memilih salah satu dari 3 kapal yang tersedia (KM Bukit Siguntang, KM Lambelu, KM Dorolonda) beserta jumlah tiket. Sistem kemudian membuat objek `Penumpang`, `Kapal`, dan `Pemesanan` baru, lalu menambahkannya ke `daftarPemesanan` dan menampilkan total harga yang harus dibayar (`getTotalHarga()`).

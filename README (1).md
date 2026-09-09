@@ -231,4 +231,27 @@ Pada bagian ini, pengguna memasukkan data penumpang, memilih kapal, dan menentuk
 
 Pada bagian ini, sistem menampilkan data pemesanan yang telah tersimpan, meliputi ID pemesanan, data penumpang, kapal, tujuan, harga tiket, jumlah tiket, dan total harga.
 
+---
+
+## 4. Ubah Pemesanan
+
+<img width="443" height="546" alt="Screenshot 2026-09-10 003346" src="https://github.com/user-attachments/assets/b0bc92de-2265-43ea-870a-c816d0769736" />
+
+Pada bagian ini, pengguna memilih menu Ubah Pemesanan dan memasukkan ID pemesanan yang ingin diperbarui. Setelah data baru dimasukkan, sistem memperbarui informasi pemesanan dan menampilkan pesan "Data berhasil diubah."
+
+## 5. Hapus Pemesanan
+
+<img width="367" height="355" alt="Screenshot 2026-09-10 003359" src="https://github.com/user-attachments/assets/f16057fd-d272-4401-baea-99b75af61d2e" />
+
+Pada bagian ini, pengguna memilih menu Hapus Pemesanan dan memasukkan ID pemesanan yang ingin dihapus. Jika ID ditemukan, sistem menghapus data dari ArrayList dan menampilkan pesan "Data berhasil dihapus."
+
+## 6. Keluar
+
+<img width="347" height="288" alt="Screenshot 2026-09-10 003413" src="https://github.com/user-attachments/assets/0a47d889-e570-4833-a65c-737296ead8e7" />
+
+Pada bagian ini, pengguna memilih menu Keluar untuk mengakhiri program. Sistem menghentikan perulangan dan menampilkan pesan "Program selesai. Terima kasih."
+
+
+
+
 

@@ -69,15 +69,57 @@ Program menerapkan beberapa konsep pemrograman berorientasi objek dan validasi i
 3. **Validasi Input**  
    Program menerapkan validasi terhadap input pengguna, salah satunya pada pilihan kapal. Jika pengguna memasukkan pilihan yang tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem akan menampilkan pesan **"Pilihan kapal tidak tersedia."** dan tidak menyimpan data pemesanan.
 
-## Cara Menjalankan Program
-1. Pastikan Java (JDK) dan Maven sudah terinstal.
-2. Clone repository ini.
-3. Jalankan perintah berikut di root folder project:
-   ```bash
-   mvn compile
-   mvn exec:java -Dexec.mainClass="com.mycompany.sistem_pemesanan_tiket_kapal.Sistem_pemesanan_tiket_Kapal"
-   ```
-4. Ikuti menu yang muncul di terminal.
+#### 1. Tambah Pemesanan (Menu 1)
+
+[svg](https://github.com/ajirifqi04/Praktikum-PBO-2026/tree/master#1-tambah-pemesanan-menu-1)
+
+- Pengguna memasukkan data pemesanan berupa ID pemesanan, nama penumpang, NIK, umur, pilihan kapal, dan jumlah tiket.
+- Sistem menampilkan tiga pilihan kapal yang dilengkapi dengan nama kapal, tujuan, dan harga tiket.
+- Sistem menentukan nama kapal, tujuan, dan harga tiket berdasarkan pilihan pengguna menggunakan percabangan `switch`.
+- Jika pilihan kapal tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem menampilkan pesan **"Pilihan kapal tidak tersedia."** dan data tidak disimpan.
+- Jika pilihan valid, sistem membuat objek `Penumpang`, `Kapal`, dan `Pemesanan` menggunakan constructor.
+- Objek `Pemesanan` kemudian ditambahkan ke dalam `ArrayList` `daftarPemesanan`.
+- Sistem menghitung total harga secara otomatis menggunakan method `getTotalHarga()` dan menampilkan pesan bahwa pemesanan berhasil disimpan.
+
+#### 2. Tampilkan Pemesanan (Menu 2)
+
+[svg](https://github.com/ajirifqi04/Praktikum-PBO-2026/tree/master#2-tampilkan-pemesanan-menu-2)
+
+- Sistem memeriksa isi `ArrayList` `daftarPemesanan` untuk mengetahui apakah terdapat data pemesanan.
+- Jika belum terdapat data, sistem menampilkan pesan **"Belum ada data pemesanan."**
+- Jika terdapat data, sistem menggunakan perulangan `for` untuk mengambil setiap objek `Pemesanan` yang tersimpan.
+- Sistem menampilkan informasi pemesanan yang meliputi ID pemesanan, nama penumpang, NIK, umur, nama kapal, tujuan, harga tiket, jumlah tiket, dan total harga.
+- Total harga ditampilkan berdasarkan hasil perhitungan method `getTotalHarga()`.
+
+#### 3. Ubah Pemesanan (Menu 3)
+
+[svg](https://github.com/ajirifqi04/Praktikum-PBO-2026/tree/master#3-ubah-pemesanan-menu-3)
+
+- Pengguna memasukkan ID pemesanan yang ingin diubah.
+- Sistem melakukan perulangan pada `ArrayList` untuk mencari data berdasarkan `idPemesanan`.
+- Jika ID ditemukan, pengguna memasukkan data pemesanan baru berupa nama penumpang, NIK, umur, pilihan kapal, dan jumlah tiket.
+- Sistem menentukan nama kapal, tujuan, dan harga tiket berdasarkan pilihan kapal menggunakan percabangan `switch`.
+- Jika pilihan kapal valid, data pada objek `Penumpang` dan `Kapal` diperbarui menggunakan method `setter`, kemudian jumlah tiket pada objek `Pemesanan` juga diperbarui.
+- Jika ID tidak ditemukan, sistem menampilkan pesan **"Data dengan ID tersebut tidak ditemukan."**
+
+#### 4. Hapus Pemesanan (Menu 4)
+
+[svg](https://github.com/ajirifqi04/Praktikum-PBO-2026/tree/master#4-hapus-pemesanan-menu-4)
+
+- Pengguna memasukkan ID pemesanan yang ingin dihapus.
+- Sistem melakukan perulangan untuk mencari data berdasarkan `idPemesanan`.
+- Jika ID ditemukan, sistem menghapus objek `Pemesanan` dari `ArrayList` menggunakan method `remove()`.
+- Setelah data berhasil dihapus, sistem menampilkan pesan **"Data berhasil dihapus."**
+- Jika ID tidak ditemukan, sistem menampilkan pesan **"Data dengan ID tersebut tidak ditemukan."**
+
+#### 5. Keluar (Menu 5)
+
+[svg](https://github.com/ajirifqi04/Praktikum-PBO-2026/tree/master#5-keluar-menu-5)
+
+- Pengguna memilih menu **5. Keluar** untuk mengakhiri program.
+- Sistem menampilkan pesan **"Program selesai."** dan **"Terima kasih."**
+- Nilai `pilihan` menjadi `5`, sehingga kondisi pada perulangan `do-while` tidak terpenuhi.
+- Perulangan berhenti dan program selesai dijalankan.
 
 ## Struktur Folder
 ```

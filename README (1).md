@@ -1,4 +1,4 @@
-# Minpro 1 PBO Sistem Pemesanan TiketKapal
+# Minpro 1 PBO Sistem Pemesanan Tiket Kapal
 
 ## Deskripsi Singkat Program
 Program ini adalah **Sistem Pemesanan Tiket Kapal** berbasis Java (console/CLI) yang dibuat menggunakan konsep Pemrograman Berorientasi Objek (PBO). Program ini memungkinkan pengguna untuk melakukan pemesanan tiket kapal, melihat daftar pemesanan, mengubah data pemesanan, dan menghapus data pemesanan secara interaktif melalui menu di terminal.

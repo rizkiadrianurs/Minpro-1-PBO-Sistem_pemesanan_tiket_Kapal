@@ -188,25 +188,6 @@ Jika pengguna memasukkan pilihan yang tidak tersedia, yaitu selain `1`, `2`, ata
 
 ---
 
-# Struktur Folder
-
-```text
-Sistem_pemesanan_tiket_Kapal/
-├── pom.xml
-└── src/
-    └── main/
-        └── java/
-            └── com/
-                └── mycompany/
-                    └── sistem_pemesanan_tiket_kapal/
-                        ├── Kapal.java
-                        ├── Penumpang.java
-                        ├── Pemesanan.java
-                        └── Sistem_pemesanan_tiket_Kapal.java
-```
-
----
-
 # Gambaran Output
 
 ## 1. Menu
@@ -250,6 +231,27 @@ Pada bagian ini, pengguna memilih menu Hapus Pemesanan dan memasukkan ID pemesan
 <img width="347" height="288" alt="Screenshot 2026-09-10 003413" src="https://github.com/user-attachments/assets/0a47d889-e570-4833-a65c-737296ead8e7" />
 
 Pada bagian ini, pengguna memilih menu Keluar untuk mengakhiri program. Sistem menghentikan perulangan dan menampilkan pesan "Program selesai. Terima kasih."
+
+---
+
+# Struktur Folder
+
+```text
+Sistem_pemesanan_tiket_Kapal/
+├── pom.xml
+└── src/
+    └── main/
+        └── java/
+            └── com/
+                └── mycompany/
+                    └── sistem_pemesanan_tiket_kapal/
+                        ├── Kapal.java
+                        ├── Penumpang.java
+                        ├── Pemesanan.java
+                        └── Sistem_pemesanan_tiket_Kapal.java
+```
+
+
 
 
 

@@ -17,13 +17,18 @@ Program ini menerapkan konsep-konsep OOP seperti:
 | `Sistem_pemesanan_tiket_Kapal` | Kelas utama (`main`) yang menjalankan program, berisi menu interaktif dan logika CRUD (Create, Read, Update, Delete) data pemesanan. |
 
 ## Penjelasan Alur Program
+
 1. Program dijalankan melalui method `main` pada kelas `Sistem_pemesanan_tiket_Kapal`.
-2. Program menampilkan menu utama secara berulang (looping `do-while`) sampai pengguna memilih menu **Keluar**:
+
+2. Program menampilkan menu utama secara berulang menggunakan looping `do-while` sampai pengguna memilih menu **Keluar**.
+
+   Menu yang tersedia:
    1. **Tambah Pemesanan**
    2. **Tampilkan Pemesanan**
    3. **Ubah Pemesanan**
    4. **Hapus Pemesanan**
    5. **Keluar**
+
 3. Data pemesanan disimpan sementara di memori menggunakan `ArrayList<Pemesanan>` selama program berjalan.
 
 ### 1. Tambah Pemesanan

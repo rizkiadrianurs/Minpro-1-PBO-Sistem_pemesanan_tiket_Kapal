@@ -56,11 +56,18 @@ Pengguna memasukkan ID pemesanan yang ingin dihapus. Jika ditemukan, data akan d
 ### 5. Keluar
 Program menghentikan perulangan menu dan menampilkan pesan penutup.
 
-## Penjelasan Letak Penerapan Nilai Tambah
-- **Perhitungan otomatis total harga**: method `getTotalHarga()` pada kelas `Pemesanan` menghitung `hargaTiket * jumlahTiket` secara otomatis, sehingga pengguna tidak perlu menghitung manual.
-- **Validasi input pilihan kapal**: jika pengguna memasukkan pilihan kapal yang tidak tersedia (bukan 1, 2, atau 3), sistem tidak akan menyimpan data dan memberi pesan "Pilihan kapal tidak tersedia."
-- **Pencarian data berbasis ID unik**: fitur ubah dan hapus data memanfaatkan `idPemesanan` sebagai identifier unik untuk mencari data yang tepat di dalam `ArrayList`, bukan berdasarkan index array secara langsung.
-- **Penggunaan try-with-resources** pada `Scanner` di method `main`, sehingga resource input otomatis tertutup saat program selesai.
+## Penerapan Nilai Tambah
+
+Program menerapkan beberapa konsep pemrograman berorientasi objek dan validasi input untuk meningkatkan keamanan data serta kualitas program, yaitu:
+
+1. **Access Modifier**  
+   Program menerapkan access modifier `private` pada atribut kelas `Pemesanan`, seperti `idPemesanan`, `namaPemesan`, `kapal`, `tujuan`, `hargaTiket`, dan `jumlahTiket`. Dengan demikian, data tidak dapat diakses secara langsung dari luar kelas.
+
+2. **Encapsulation**  
+   Program menerapkan konsep encapsulation dengan menyediakan method `getter` dan `setter` untuk mengakses dan mengubah nilai atribut pada kelas `Pemesanan`. Dengan demikian, akses terhadap data dapat dikontrol melalui method yang telah disediakan.
+
+3. **Validasi Input**  
+   Program menerapkan validasi terhadap input pengguna, salah satunya pada pilihan kapal. Jika pengguna memasukkan pilihan yang tidak tersedia, yaitu selain `1`, `2`, atau `3`, sistem akan menampilkan pesan **"Pilihan kapal tidak tersedia."** dan tidak menyimpan data pemesanan.
 
 ## Cara Menjalankan Program
 1. Pastikan Java (JDK) dan Maven sudah terinstal.

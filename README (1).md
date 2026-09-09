@@ -1,5 +1,13 @@
 # Minpro 1 PBO — Sistem Pemesanan Tiket Kapal
 
+---
+
+Nama  : Rizki Adrianur Saputra
+Nim   : 2509116049
+Kelas : B
+
+---
+
 ## Deskripsi Singkat Program
 
 Program ini merupakan **Sistem Pemesanan Tiket Kapal** berbasis Java yang dijalankan melalui console/CLI. Program dibuat dengan menerapkan konsep **Pemrograman Berorientasi Objek (PBO)** dan menyediakan fitur untuk mengelola data pemesanan tiket kapal secara interaktif.

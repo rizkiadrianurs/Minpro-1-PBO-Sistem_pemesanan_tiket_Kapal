@@ -203,3 +203,8 @@ Sistem_pemesanan_tiket_Kapal/
                         ├── Penumpang.java
                         ├── Pemesanan.java
                         └── Sistem_pemesanan_tiket_Kapal.java
+
+---
+
+# Gambaran Output
+1. 

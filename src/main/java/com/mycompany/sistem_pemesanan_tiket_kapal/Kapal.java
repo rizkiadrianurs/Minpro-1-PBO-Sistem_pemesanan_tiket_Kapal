@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.sistem_pemesanan_tiket_kapal;
+
+/**
+ *
+ * @author ACER
+ */
+public class Kapal {
+    
+    private String namaKapal;
+    private String tujuan;
+    private int hargaTiket;
+
+    public Kapal(String namaKapal, String tujuan, int hargaTiket) {
+        this.namaKapal = namaKapal;
+        this.tujuan = tujuan;
+        this.hargaTiket = hargaTiket;
+    }
+
+    public String getNamaKapal() {
+        return namaKapal;
+    }
+
+    public String getTujuan() {
+        return tujuan;
+    }
+
+    public int getHargaTiket() {
+        return hargaTiket;
+    }
+
+    public void setNamaKapal(String namaKapal) {
+        this.namaKapal = namaKapal;
+    }
+
+    public void setTujuan(String tujuan) {
+        this.tujuan = tujuan;
+    }
+
+    public void setHargaTiket(int hargaTiket) {
+        this.hargaTiket = hargaTiket;
+    }
+}

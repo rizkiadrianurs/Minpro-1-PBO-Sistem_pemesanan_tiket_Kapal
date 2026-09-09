@@ -2,9 +2,11 @@
 
 ---
 
-Nama  : Rizki Adrianur Saputra
-Nim   : 2509116049
-Kelas : B
+## Identitas
+
+**Nama** : Rizki Adrianur Saputra  
+**NIM** : 2509116049  
+**Kelas** : B
 
 ---
 

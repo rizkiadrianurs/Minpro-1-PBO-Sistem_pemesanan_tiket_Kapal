@@ -24,7 +24,7 @@ Program menyimpan data pemesanan sementara selama program berjalan menggunakan `
 
 ---
 
-## Konsep Pemrograman Berorientasi Objek
+## Nilai Tambah
 
 Program menerapkan beberapa konsep utama dalam PBO, yaitu:
 
